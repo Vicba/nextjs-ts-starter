@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Home() {
   return (
@@ -15,6 +16,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
             By{" "}
             <Image
               src="/vercel.svg"
